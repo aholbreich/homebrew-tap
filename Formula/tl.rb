@@ -2,7 +2,7 @@
 class Tl < Formula
   desc "Git-native task ledger for human and AI agent coordination"
   homepage "https://github.com/aholbreich/tl"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   head "https://github.com/aholbreich/tl.git", branch: "main"
@@ -15,20 +15,20 @@ class Tl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aholbreich/tl/releases/download/#{version}/tl-darwin-amd64.tar.gz"
-      sha256 "ec4d877efc11cffb3da0d7c4652adc56d6ee49f4599fa2a9c3a0b4ba735a864d"
+      sha256 "dfb4d94c1a5d597dcabf7611b83e87d59df8278f7f4d8da7bcba24cd11cad172"
     else
       url "https://github.com/aholbreich/tl/releases/download/#{version}/tl-darwin-arm64.tar.gz"
-      sha256 "75cb692be75fe92f115d6876360557eb01d250432765212960ed0784840040ae"
+      sha256 "e1010d2d5cd6d83c920fec750b2911d6adfe2e566c610aef9c8b8f7ff4610283"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/aholbreich/tl/releases/download/#{version}/tl-linux-amd64.tar.gz"
-      sha256 "c0a8af20b39f73fbec286bf126cc7dc70c738b0299fe0d35ca6df9735c129acb"
+      sha256 "1baed7c295945c1a0eed1203bc6d42f78c3bc3350a1a7af7b0e243e1628e473c"
     else
       url "https://github.com/aholbreich/tl/releases/download/#{version}/tl-linux-arm64.tar.gz"
-      sha256 "f0b6f66413dc2c723958892aa029fb2eb2791056fe26a38eb2b9c6e25ae9e10e"
+      sha256 "1bb6d7fd43bffaa988ae5443b10b6630d7cda4625a30108b3babb485a5a9fbb8"
     end
   end
 
